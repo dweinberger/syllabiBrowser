@@ -1,8 +1,8 @@
 <?php
 
 // Temporary fix.
-// Gets "environment" returns and adds them to prior "ecology" returns, 
-// after deduping. 
+// Gets "environment" returns, checks for dupes in the "ecology" returns, 
+// and creates new file just for those environment returns. 
 
 error_reporting(E_ALL);
 error_reporting (E_ALL ^ E_NOTICE);
