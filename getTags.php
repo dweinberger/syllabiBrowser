@@ -89,12 +89,14 @@ foreach($syllabi as $syl){
 // ------ Save the file
 $j = json_encode($newarray);
 //var_dump($j);
+
+$fname = "syllabi-ecology-with-tags.json"
  
-$fp = fopen("syllabi-ecology-with-tags.json", 'w');
+$fp = fopen($fname, 'w');
 fwrite($fp,$j);
 fclose($fp);
 
-print "<p>File written: ecotest.json";
+print "<p>File written: $fname";
 // greenSyllabi token:
 //8fabe906d5b745fbb68fd245119dc8b7
 
